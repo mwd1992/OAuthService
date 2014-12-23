@@ -6,6 +6,7 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.0.RELEASE")
+        classpath 'postgresql:postgresql:9.1-901.jdbc4'
     }
 }
 
@@ -24,6 +25,9 @@ repositories {
 }
 
 dependencies {
+    compile("org.springframework.boot:spring-boot-starter")
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile 'postgresql:postgresql:9.1-901.jdbc4'
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }

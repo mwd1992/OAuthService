@@ -1,0 +1,13 @@
+spring:
+  application.name: CommandLineRunner
+
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/oauth
+    username: postgres
+    password: admin
+
+  jpa:
+     show-sql: false
+     hibernate:
+       ddl-auto: update
