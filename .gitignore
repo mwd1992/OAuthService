@@ -1,0 +1,25 @@
+#Exclude idea project configuration files
+.idea/
+*.iml
+*.ipr
+*.iws
+*.ids
+
+#Exclude OSX system files
+.DS-Store
+.DS_Store
+
+#Exclude classes
+target/
+/target/*/*.class
+out/
+classes/
+
+#Exclude gradle files
+.gradle/
+build/
+gradle/
+
+#Exclude log files
+*.log
+*.gz
